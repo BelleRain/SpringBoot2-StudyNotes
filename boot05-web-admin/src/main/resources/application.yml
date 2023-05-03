@@ -1,0 +1,95 @@
+spring:
+  datasource:
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/payment_demo
+
+
+    druid:
+      aop-patterns: com.example.admin.boot05webadmin.* #springbean监控
+      filters: stat,slf4j,wall   #所有开启的功能
+
+      stat-view-servlet:    #监控页配置
+        enabled: true
+        reset-enable: false
+        login-password: 1234
+        login-username: admin
+
+
+      web-stat-filter:  #web监控
+        enabled: true
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+        url-pattern: /*
+
+      filter:
+        stat: #sql监控
+          slow-sql-millis: 1000 #慢查询
+          log-slow-sql: true
+          enabled: true
+        wall: #防火墙
+          config:
+            drop-table-allow: true
+          enabled: true
+  redis:
+    host: 192.168.150.134
+    port: 6379
+    client-type: jedis
+    jedis:
+      pool:
+        max-active: 10
+  jmx:
+    enabled: true   #开启JMX指标监控，默认为false
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:8088
+        instance:
+          prefer-ip: true
+  application:
+    name: boot05-web-admin
+
+mybatis:
+  #  config-location: classpath:mybatis/mybatis-configuration.xml
+  #  mapper-locations: classpath:mybatis/mapper/*
+  configuration:  # 指定mybatis全局配置文件中的相关配置项
+    map-underscore-to-camel-case: true # 可以不写全局；配置文件，所有全局配置文件的配置都放在configuration配置项中即可
+
+
+
+
+# management 是所有actuator的配置
+# management.endpoint.端点名.xxxx  对某个端点的具体配置
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+
+  # management.endpoint.端点名.xxxx  对某个端点的具体配置
+  endpoint:
+    health:
+      show-details: always #显示详细信息
+      enabled: true
+
+    info:
+      enabled: true
+
+    beans:
+      enabled: true
+
+    metrics:
+      enabled: true
+  info:
+    env:
+      enabled: true    #暴露环境中任何以info.开头的属性
+info:
+  appName: boot05-admin
+  version: 2.0.1
+  mavenProjectName: @project.artifactId@  #使用@@可以获取maven的pom文件值
+  mavenProjectVersion: @project.version@
+
+
+

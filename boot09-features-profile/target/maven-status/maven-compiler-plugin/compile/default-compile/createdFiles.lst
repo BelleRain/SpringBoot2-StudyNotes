@@ -1,0 +1,6 @@
+com\example\boot09featuresprofile\bean\Person.class
+com\example\boot09featuresprofile\Boot09FeaturesProfileApplication.class
+com\example\boot09featuresprofile\controller\HelloController.class
+com\example\boot09featuresprofile\bean\Worker.class
+com\example\boot09featuresprofile\bean\Boss.class
+com\example\boot09featuresprofile\bean\Car.class

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/atguigu-hello-spring-boot-starter-autoconfigure/atguigu-hello-spring-boot-starter-autoconfigure.iml" filepath="$PROJECT_DIR$/atguigu-hello-spring-boot-starter-autoconfigure/atguigu-hello-spring-boot-starter-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atguiguhellospringbootstarter/atguiguhellospringbootstarter.iml" filepath="$PROJECT_DIR$/atguiguhellospringbootstarter/atguiguhellospringbootstarter.iml" />
+    </modules>
+  </component>
+</project>

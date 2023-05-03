@@ -1,0 +1,70 @@
+person:
+#  双引号控制台换行输出
+#  username: "zhangsan \n hello"
+#  单引号控制台 \n 输出
+#  username: 'zhangsan \n hello'
+#  双引号会将 \n 作为换行输出，单引号会将 \n 作为字符串输出
+#  双引号不会发生转义，单引号会发生转义
+  boss: true
+  birth: 2019/01/09
+  age: 18
+  pet:
+    name: 小红
+    weight: 98
+#  interests: [篮球,羽毛球,足球]
+  interests:
+    - 篮球
+    - 足球
+    - 18
+#  animal: [阿毛,阿狗]
+  animal:
+    - marry
+    - dog
+#  score: {"math":"18","english":10}
+  score:
+    math: 18
+    english: 10
+  salarys:
+    - 99.01
+    - 89.12
+  allPets:
+    sick:
+      - {name: 阿狗,weight: 88}
+      - name: 阿猫
+        weight: 99
+      - name: 阿虫
+        weight: 78.77
+    health:
+      - name: 一一
+        weight: 99.45
+      - name: 二一
+        weight: 98.89
+  user-name: zhangsan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

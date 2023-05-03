@@ -1,0 +1,4 @@
+person:
+  name: pro-张三
+server:
+  port: 8088

@@ -1,0 +1,17 @@
+#spring:
+#  mvc:
+#    static-path-pattern: /res/**
+#  web:
+#    resources:
+#      static-locations: [classpath:/haha/]
+#      add-mappings: true
+#spring:
+#  mvc:
+#    hiddenmethod:
+#      filter:
+#        enabled: true   #开启页面表单的Rest功能
+
+spring:
+  mvc:
+    contentnegotiation:
+      favor-parameter: true  #开启请求参数内容协商模式
